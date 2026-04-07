@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pedro Portfolio | Software Engineering
 
-## Getting Started
+Repositório central do meu portfólio profissional, desenvolvido com foco em performance, escalabilidade e arquitetura moderna. O projeto demonstra a aplicação prática de conceitos de Server-Side Rendering (SSR), Static Site Generation (SSG) e componentização modular.
 
-First, run the development server:
+## 🛠 Stack Tecnológica
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* **Framework:** Next.js 15 (App Router)
+* **Linguagem:** TypeScript
+* **Estilização:** Tailwind CSS v4 (CSS-first architecture)
+* **Gerenciamento de Tema:** Next Themes
+* **Deployment:** Vercel
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🏗 Arquitetura e Padrões
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O projeto foi estruturado seguindo princípios de separação de responsabilidades (SoC) e modularidade para garantir fácil manutenção:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Camada de Dados:** Isolada em `/data`, permitindo a transição de objetos estáticos para consumo de APIs externas sem impactar a UI.
+* **Componentização:** Divisão entre componentes de interface genérica (`/components/ui`) e componentes de lógica de negócio ou funcionalidades específicas (`/components/features`).
+* **Provider Pattern:** Utilização de Context Providers para gerenciamento de estados globais, como o tema da aplicação.
+* **Otimização:** Uso de fontes locais via `next/font` e estratégias de hidratação para evitar Layout Shifts.
 
-## Learn More
+## 🚀 Como Executar o Projeto
 
-To learn more about Next.js, take a look at the following resources:
+### Pré-requisitos
+* Node.js (versão 18.x ou superior)
+* Gerenciador de pacotes (npm, yarn ou pnpm)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Instalação e Execução
+1. Clone o repositório:
+   ```bash
+   git clone [https://github.com/seu-usuario/meu-portfolio.git](https://github.com/seu-usuario/meu-portfolio.git)
