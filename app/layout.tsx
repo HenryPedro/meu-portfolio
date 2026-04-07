@@ -36,7 +36,7 @@ export default function RootLayout({
             <ThemeToggle />
           </header>
 
-          <main className="flex-grow container mx-auto p-4">
+          <main className="grow container mx-auto p-4">
             {children}
           </main>
           

@@ -20,7 +20,7 @@ export function ThemeToggle() {
 
   if (!mounted) {
     // Mantemos a div invisível do mesmo tamanho para evitar que o layout pule
-    return <button className="p-2 w-[72px] h-9 invisible"></button>
+    return <button className="p-2 w-18 h-9 invisible"></button>
   }
 
   return (
